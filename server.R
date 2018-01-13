@@ -79,8 +79,8 @@ shinyServer(function(input, output, session) {
       geom_point(data = nhlSelected, aes(fill = CurrentTeamName, size = nhlSelected$P/1.5), pch = 21, alpha = 0.5) +
       geom_smooth(data = nhlSelected, aes(col = CurrentTeamName), method = 'lm', formula = y ~ x, alpha = 0.2,
                   size = 1.5, se=FALSE) +
-      geom_label_repel(data = nhlSelected, aes(color = nhlSelected$CurrentTeamName, label = nhlSelected$keyLabel), size = 2,
-                       box.padding = 0.3, alpha = 0.7) +
+      geom_label_repel(data = nhlSelected, aes(color = nhlSelected$CurrentTeamName, label = nhlSelected$keyLabel), size = 3,
+                       box.padding = 0.3, alpha = 0.8) +
       geom_shadowtext(data = nhlSelected, aes(label = nhlSelected$P), size = 4, hjust = 1, vjust = 1) +
       theme(legend.position = "bottom") +
       scale_size_identity() +

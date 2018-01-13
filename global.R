@@ -1,4 +1,4 @@
-filePath <- "H:/DataScience/DataProducts/Fenwick.csv"
+filePath <- "Fenwick.csv"
 nhlData <- read.csv(filePath)
 rm(filePath)
 
